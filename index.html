@@ -6,18 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lionic</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <header class="header">
       <div class="container flex header__container">
         <a href="#" class="header__logo">
-          <img src="img/logo.svg" class="header__logo" alt="logo" />
+          <img src="img/logo.svg" class="header__logo flex" alt="logo" />
         </a>
         <nav class="nav header__nav" title="Main menu">
           <ul class="nav__item list-reset flex">
@@ -42,6 +39,11 @@
           </ul>
         </nav>
         <button class="header__btn btn btn-reset">free trial</button>
+        <button class="burger flex">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
       </div>
     </header>
 
@@ -250,10 +252,11 @@
           <ul class="clients-list list-reset flex">
             <li class="clients-list__item flex">
               <p class="clients-list__descr">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
-                asperiores reprehenderit quod similique voluptatibus praesentium
-                vitae voluptatem doloremque illum repellat dolorum, quia nulla
-                magnam in iure non impedit cum vero!
+                Duis autem vel eum iriure dolor in&nbsp;hendrerit
+                in&nbsp;vulputate velit esse molestie consequat, vel illum
+                dolore eu&nbsp;feugiat nulla facilisis at&nbsp;vero eros
+                et&nbsp;accumsan et&nbsp;iusto odio dignissim qui blandit odio
+                dignissim qui blandit molestie consequat.
               </p>
               <div class="clients-list__user flex">
                 <div class="clients-list__avatar">
@@ -267,10 +270,11 @@
             </li>
             <li class="clients-list__item flex">
               <p class="clients-list__descr">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
-                asperiores reprehenderit quod similique voluptatibus praesentium
-                vitae voluptatem doloremque illum repellat dolorum, quia nulla
-                magnam in iure non impedit cum vero!
+                Duis autem vel eum iriure dolor in&nbsp;hendrerit
+                in&nbsp;vulputate velit esse molestie consequat, vel illum
+                dolore eu&nbsp;feugiat nulla facilisis at&nbsp;vero eros
+                et&nbsp;accumsan et&nbsp;iusto odio dignissim qui blandit odio
+                dignissim qui blandit molestie consequat.
               </p>
               <div class="clients-list__user flex">
                 <div class="clients-list__avatar">
@@ -284,10 +288,11 @@
             </li>
             <li class="clients-list__item flex">
               <p class="clients-list__descr">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
-                asperiores reprehenderit quod similique voluptatibus praesentium
-                vitae voluptatem doloremque illum repellat dolorum, quia nulla
-                magnam in iure non impedit cum vero!
+                Duis autem vel eum iriure dolor in&nbsp;hendrerit
+                in&nbsp;vulputate velit esse molestie consequat, vel illum
+                dolore eu&nbsp;feugiat nulla facilisis at&nbsp;vero eros
+                et&nbsp;accumsan et&nbsp;iusto odio dignissim qui blandit odio
+                dignissim qui blandit molestie consequat.
               </p>
               <div class="clients-list__user flex">
                 <div class="clients-list__avatar">
@@ -325,10 +330,16 @@
               </li>
               <li class="contacts-list__item flex contacts-list__item-mail">
                 <strong class="contacts-list__item-caption">Email Us</strong>
-                <a href="mailto:example@example.com" class="contacts-list__item-link">
+                <a
+                  href="mailto:example@example.com"
+                  class="contacts-list__item-link"
+                >
                   example@example.com
                 </a>
-                <a href="mailto:support@example.com" class="contacts-list__item-link">
+                <a
+                  href="mailto:support@example.com"
+                  class="contacts-list__item-link"
+                >
                   support@example.com
                 </a>
               </li>
@@ -340,7 +351,8 @@
         <div class="container">
           <h2 class="section-title join-us__title">Join&nbsp;us</h2>
           <p class="section-descr join-us__descr">
-            Take control of&nbsp;your paid subscriptions today!
+            Lionic guides you on&nbsp;making decisions for all aspects
+            of&nbsp;your end-of-life plans.
           </p>
           <form
             action="https://jsonplaceholder.typicode.com/posts"
@@ -376,7 +388,11 @@
                   maxlength="12"
                   required
                 />
-                <select class="join-us__form-select" name="country" title="fill in this field">
+                <select
+                  class="join-us__form-select"
+                  name="country"
+                  title="fill in this field"
+                >
                   <option value="Country" disabled selected>Country</option>
                   <option value="United Kingdom">United Kingdom</option>
                   <option value="United States">United States</option>
@@ -397,7 +413,9 @@
             </div>
             <div class="join-us__form-bottom">
               <div class="join-us__form-wrapper">
-                <button class="btn btn-reset join-us__form-btn">Get Started</button>
+                <button class="btn btn-reset join-us__form-btn">
+                  Get Started
+                </button>
                 <label class="join-us__form-check">
                   <input type="checkbox" required />
                   I agree with the <a href="#">user agreement</a>

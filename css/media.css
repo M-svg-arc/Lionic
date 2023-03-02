@@ -426,7 +426,7 @@
     position: absolute;
     top: 0;
     left: -15px;
-    width: calc(100% + 29px);
+    width: calc(100% + 30px);
     height: 1px;
     background-color: #c4c4c4;
   }

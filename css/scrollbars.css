@@ -20,6 +20,7 @@ html::-webkit-scrollbar-thumb {
 .join-us__form-textarea::-webkit-scrollbar-track {
   background-color: #e4e4e4;
   border-radius: 100px;
+  margin: 16px 0;
 }
 
 .join-us__form-textarea::-webkit-scrollbar-thumb {
